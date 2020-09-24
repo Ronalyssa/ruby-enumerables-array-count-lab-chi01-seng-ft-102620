@@ -1,3 +1,5 @@
+require 'pry'
+
 def count_strings(array)
   # Return the total number of strings in the provided array using the count enumerable
   total = 0
@@ -17,6 +19,7 @@ def count_empty_strings(array)
   index = 0
   while index < array.count do
     if array[index] == ""
+      binding.pry
       total += 1
     end
     index += 1
